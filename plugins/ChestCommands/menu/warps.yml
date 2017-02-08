@@ -1,0 +1,69 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&1Warps'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 3
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'warps'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'tell: &eYou opened the warps menu.'
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: wool:1
+    left-click: true
+    right-click: false
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+spawn:
+  COMMAND: 'goto world'
+  NAME: '&eSpawn'
+  LORE:
+    - 'Takes you to spawn'
+  ID: bed
+  POSITION-X: 2
+  POSITION-Y: 2
+  
+potions:
+  COMMAND: 'goto Potions'
+  NAME: '&3Potions'
+  LORE:
+    - 'Takes you to a place'
+  ID: potion
+  POSITION-X: 4
+  POSITION-Y: 2
+  
+xp:
+  COMMAND: 'xp 1l'
+  NAME: '&3Free XP'
+  LORE:
+    - 'Gives free level,'
+    - 'please dont spam'
+  ID: diamond
+  POSITION-X: 6
+  POSITION-Y: 2
